@@ -44,3 +44,32 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+
+//full screen is needed
+html,body {height:100%;}
+
+//not so jumbo anymore
+.jumbotron {
+    padding: 0.5em 0.6em;
+    h1 { font-size: 2em;}
+    p {font-size: 1.2em;
+       .btn {padding: 0.5em;}
+    }
+    float: left;
+    width: 100%;
+}
+
+.container-fluid{
+  height:100%;
+  display: flex;
+  flex-flow: column;
+}
+
+//a little help to wrap text
+.container-fluid .well{
+    flex: 1 1 auto;
+    word-wrap: break-word;     
+    overflow-wrap: break-word;
+    width: 100%;
+    overflow: scroll;
+}
